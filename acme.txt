@@ -1,0 +1,5 @@
+* {
+	background:#FFFFE8!important;
+	color:#424242!important;
+}
+

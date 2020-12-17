@@ -34,8 +34,9 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
-	  <mp3>{{ .Params.mp3 }}</mp3>
-	  <youtube_id>{{ .Params.youtube_id }}</youtube_id>
+      <mp3>{{ .Params.mp3 }}</mp3>
+      <youtube_id>{{ .Params.youtube_id }}</youtube_id>
+      <enclosure url="{{ .Params.mp3 }}" type="audio/mpeg" />
     </item>
     {{ end }}
   </channel>
